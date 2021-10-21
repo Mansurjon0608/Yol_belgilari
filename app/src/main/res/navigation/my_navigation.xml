@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.yolbelgilari.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
+
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.yolbelgilari.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add"/>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.yolbelgilari.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.yolbelgilari.InfoFragment"
+        android:label="fragment_info2"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/likedFragment"
+        android:name="com.example.yolbelgilari.LikedFragment"
+        android:label="fragment_liked"
+        tools:layout="@layout/fragment_liked" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.yolbelgilari.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/myHomeFragment"
+        android:name="com.example.yolbelgilari.MyHomeFragment"
+        android:label="fragment_my_home"
+        tools:layout="@layout/fragment_my_home" />
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.yolbelgilari.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit"/>
+
+</navigation>

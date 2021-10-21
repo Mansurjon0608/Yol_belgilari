@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#005CA1"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        android:gravity="left"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:id="@+id/image_back"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_chevron_left_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yo_l_belgisini_qo_shish"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageSign"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_image_search_24"
+        app:layout_constraintBottom_toTopOf="@id/belgi_nomi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yo_l_belgisini_qo_shish_uchun_rasm_ustiga_bosing"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/belgi_nomi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageSign" />
+
+    <EditText
+        android:id="@+id/belgi_nomi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edite_background"
+        android:hint="@string/yo_l_belgisining_nomi"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:padding="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/belgi_tarifi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+    <EditText
+        android:id="@+id/belgi_tarifi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edite_background"
+        android:gravity="start"
+        android:hint="@string/yo_l_belgilari_to_liq_ta_rifi"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/spinner_turlar"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/belgi_nomi" />
+
+    <Spinner
+        android:id="@+id/spinner_turlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btn_save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:entries="@array/belgi_turi_array"
+        app:layout_constraintTop_toBottomOf="@id/belgi_tarifi" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#005CA1"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_turlar"
+        app:layout_constraintWidth_percent="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

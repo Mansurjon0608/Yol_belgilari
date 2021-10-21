@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YolBelgilari</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yo_l_belgisining_nomi">Yo\'l belgisining nomi</string>
+    <string name="yo_l_belgilari_to_liq_ta_rifi">Yo\'l belgilari to\'liq ta\'rifi</string>
+    <string name="save">Save</string>
+    <string name="yo_l_belgisini_qo_shish_uchun_rasm_ustiga_bosing">Yo\'l belgisini qo\'shish uchun rasm ustiga bosing</string>
+    <string name="yo_l_belgisini_qo_shish">Yo\'l belgisini qo\'shish</string>
+</resources>
